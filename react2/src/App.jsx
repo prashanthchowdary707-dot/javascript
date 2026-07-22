@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
 import './App.css'
+import Change from './Change';
+import Operator from './Operator';
 
 function App() {
   const[count,setcount] = useState(0);
@@ -19,6 +21,8 @@ function App() {
       <h3>{islogin}</h3>
       <h2>{islogin ? "welcomeuser":"pleaselogin"}</h2>
       <button onClick={()=> setislogin(!islogin)}>toggle</button>
+      <Change />
+      <Operator />
     </div>
 
   )
